@@ -1,0 +1,18 @@
+# Seasons and cutoff control
+start_season: 2023
+end_season: 2025
+cutoff_week: 1         # inclusive cutoff week for end_season (e.g., 1 means through Week 1 of 2025)
+
+# Rolling windows used for features
+rolling_games: [3, 6, 10]
+
+# Model
+model_type: xgboost    # or "logreg"
+random_state: 42
+calibrate: true
+
+# Label
+label: home_win
+
+# Export
+dataset_name: dataset_2023_to_2025w1

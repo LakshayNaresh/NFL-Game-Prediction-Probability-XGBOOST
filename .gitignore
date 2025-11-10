@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.DS_Store
+*.parquet
+*.pkl
+*.log
+artifacts/
+data/raw/
