@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# 🏈 NFL Win Predictor — Advanced (2023 → Week 10, 2025)
+🏈 NFL Win Predictor — Advanced (2023 → Week 10, 2025)
 
 **Author:** Lakshay Naresh  
 **Last Updated:** Week 10 – 2025 NFL Season  
@@ -8,7 +7,7 @@
 ---
 
 ### 🧠 Overview
-A **turn-key machine-learning pipeline** that predicts NFL game outcomes using **play-by-play data**, **advanced team statistics**, and **momentum directionality**.
+Machine-learning pipeline that predicts NFL game outcomes using play-by-play data, advanced team statistics, and momentum directionality.
 
 Built with:
 - **nflverse** datasets (2023 – 2025)
@@ -18,7 +17,7 @@ Built with:
 
 ---
 
-## 🧩 Key Features
+## Key Features
 
 | Category | Description |
 |-----------|-------------|
@@ -55,24 +54,9 @@ python src/predict.py --home DAL --away PHI --season 2025 --week 11
 # 🚀  Optional Streamlit UI
 streamlit run app/app.py
 ```
-
 ---
 
-## 🔁 Weekly In-Season Updates
-
-Update your dataset each week:  
-1. Edit `cutoff_week` in `config.yml`  
-2. Re-run the pipeline:
-```bash
-python src/fetch_data.py --start 2023 --end 2025
-python src/build_features.py
-python src/freeze_dataset.py
-python src/train.py
-```
-
----
-
-## 🧮 Methodology
+## Methodology
 
 - **Leakage-Safe Rolling Windows** – uses past 3/6/10 games (shifted forward)  
 - **Directionality Metrics** – captures team trend momentum  
@@ -82,7 +66,7 @@ python src/train.py
 
 ---
 
-## 📊 Example Usage
+## Example Usage
 
 ```bash
 python src/predict.py --home KC --away SF --season 2025 --week 11
@@ -95,7 +79,7 @@ SF win probability: 31.7 %
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 nfl-win-prob-advanced/
@@ -139,7 +123,7 @@ nfl-win-prob-advanced/
 ---
 
 **Lakshay Naresh**  
-=======
+
 # NFL-Game-Prediction-Probability-XGBOOST
 Machine learning model for NFL game outcome prediction — utilizes XGBoost with play-by-play, advanced team stats, and momentum directionality to forecast win probabilities.
->>>>>>> origin/main
+
