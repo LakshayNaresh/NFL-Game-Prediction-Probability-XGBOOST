@@ -33,7 +33,7 @@ Built with:
 
 ---
 
-## ⚙️ Quick Start
+## Quick Start
 
 ```bash
 # Set up environment
