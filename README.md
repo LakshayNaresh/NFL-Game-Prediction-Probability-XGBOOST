@@ -1,15 +1,14 @@
 # NFL-Game-Prediction-Probability-XGBOOST
 Machine learning model for NFL game outcome prediction — utilizes XGBoost with play-by-play, advanced team stats, and momentum directionality to forecast win probabilities.
 
-🏈 NFL Win Predictor — Advanced (2023 → Week 10, 2025)
+NFL Win Predictor — Advanced (2023 → Week 10, 2025)
 
 **Author:** Lakshay Naresh  
 **Last Updated:** Week 10 – 2025 NFL Season  
-**Status:** ✅ Active / Continuously Updated  
 
 ---
 
-### 🧠 Overview
+### Overview
 Machine-learning pipeline that predicts NFL game outcomes using play-by-play data, advanced team statistics, and momentum directionality.
 
 Built with:
@@ -37,24 +36,24 @@ Built with:
 ## ⚙️ Quick Start
 
 ```bash
-# 1️⃣  Set up environment
+# Set up environment
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-# 2️⃣  Fetch data (2023 – 2025)
+# Fetch data (2023 – 2025)
 python src/fetch_data.py --start 2023 --end 2025
 
-# 3️⃣  Build and freeze dataset (default: Week 10 2025)
+# Build and freeze dataset (default: Week 10 2025)
 python src/build_features.py
 python src/freeze_dataset.py
 
-# 4️⃣  Train the model
+# Train the model
 python src/train.py
 
-# 5️⃣  Predict via CLI
+# Predict via CLI
 python src/predict.py --home DAL --away PHI --season 2025 --week 11
 
-# 🚀  Optional Streamlit UI
+# Optional Streamlit UI
 streamlit run app/app.py
 ```
 ---
@@ -109,16 +108,16 @@ nfl-win-prob-advanced/
 
 ---
 
-## 🚧 Roadmap
-- 🧍‍♂️ Player-level EPA per dropback / target share  
-- 🩺 Injury & roster tracking  
-- 👨‍🏫 Coaching tendencies (Pass Rate Over Expected, blitz %)  
-- 🌤️ Environment features (weather, surface, travel)  
-- 🤖 Automated feature importance & tuning  
+## Roadmap
+- Player-level EPA per dropback / target share  
+- Injury & roster tracking  
+- Coaching tendencies (Pass Rate Over Expected, blitz %)  
+- Environment features (weather, surface, travel)  
+- Automated feature importance & tuning  
 
 ---
 
-## 📎 Data Sources
+## Data Sources
 - [nflverse Data Releases](https://github.com/nflverse/nflverse-data/releases)  
 - [nfl_data_py](https://github.com/nflverse/nfl_data_py)  
 - [FTN Charting Data](https://www.ftnfantasy.com/)  
